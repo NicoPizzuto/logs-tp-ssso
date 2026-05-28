@@ -33,3 +33,32 @@ utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler ker
 [INFO] 03:22:51:865 KERNEL_SCHEDULER/(940195:940359): ## (1) - Solicito syscall: EXIT
 [INFO] 03:22:51:865 KERNEL_SCHEDULER/(940195:940359): ## (1) Pasa del estado EXECUTE al estado EXIT
 [INFO] 03:22:51:865 KERNEL_SCHEDULER/(940195:940359): ## (1) Finalizo su ejecucion con motivo de SUCCESS
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config proceso_prueba.txt
+[INFO] 05:59:51:840 KERNEL_SCHEDULER/(945814:945814): Servidor listo para aceptar conexiones
+[INFO] 05:59:51:840 KERNEL_SCHEDULER/(945814:945814): Conexion con memoria exitosa
+[INFO] 05:59:51:840 KERNEL_SCHEDULER/(945814:945814): Handshake exitoso
+[INFO] 05:59:51:840 KERNEL_SCHEDULER/(945814:945814): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 05:59:51:840 KERNEL_SCHEDULER/(945814:945814): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: proceso_prueba.txt
+[INFO] 05:59:51:840 KERNEL_SCHEDULER/(945814:945814): ## (0) Pasa del estado NEW al estado READY
+[INFO] 05:59:51:840 KERNEL_SCHEDULER/(945814:945816): Kernel Scheduler conectada con Kernel Memory
+[INFO] 06:00:14:536 KERNEL_SCHEDULER/(945814:945817): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 06:00:14:537 KERNEL_SCHEDULER/(945814:945953): Kernel Scheduler conectada con CPU
+[INFO] 06:00:15:039 KERNEL_SCHEDULER/(945814:945953): ## (0) Pasa del estado EXECUTE al estado READY
+[INFO] 06:00:15:039 KERNEL_SCHEDULER/(945814:945953): ## (0) - Desalojado por fin de quantum
+[INFO] 06:00:15:039 KERNEL_SCHEDULER/(945814:945817): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 06:00:15:541 KERNEL_SCHEDULER/(945814:945953): ## (0) Pasa del estado EXECUTE al estado READY
+[INFO] 06:00:15:541 KERNEL_SCHEDULER/(945814:945953): ## (0) - Desalojado por fin de quantum
+[INFO] 06:00:15:541 KERNEL_SCHEDULER/(945814:945817): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 06:00:16:043 KERNEL_SCHEDULER/(945814:945953): ## (0) Pasa del estado EXECUTE al estado READY
+[INFO] 06:00:16:043 KERNEL_SCHEDULER/(945814:945953): ## (0) - Desalojado por fin de quantum
+[INFO] 06:00:16:043 KERNEL_SCHEDULER/(945814:945817): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 06:00:16:545 KERNEL_SCHEDULER/(945814:945953): ## (0) Pasa del estado EXECUTE al estado READY
+[INFO] 06:00:16:546 KERNEL_SCHEDULER/(945814:945953): ## (0) - Desalojado por fin de quantum
+[INFO] 06:00:16:546 KERNEL_SCHEDULER/(945814:945817): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 06:00:17:047 KERNEL_SCHEDULER/(945814:945953): ## (0) Pasa del estado EXECUTE al estado READY
+[INFO] 06:00:17:047 KERNEL_SCHEDULER/(945814:945953): ## (0) - Desalojado por fin de quantum
+[INFO] 06:00:17:047 KERNEL_SCHEDULER/(945814:945817): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 06:00:17:548 KERNEL_SCHEDULER/(945814:945953): ## (0) - Solicito syscall: EXIT
+[INFO] 06:00:17:548 KERNEL_SCHEDULER/(945814:945953): ## (0) Pasa del estado EXECUTE al estado EXIT
+[INFO] 06:00:17:548 KERNEL_SCHEDULER/(945814:945953): ## (0) Finalizo su ejecucion con motivo de SUCCESS
