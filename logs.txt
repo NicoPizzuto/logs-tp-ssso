@@ -1,0 +1,35 @@
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config proceso_mutex_padre.txt
+[INFO] 03:21:55:727 KERNEL_SCHEDULER/(940195:940195): Servidor listo para aceptar conexiones
+[INFO] 03:21:55:727 KERNEL_SCHEDULER/(940195:940195): Conexion con memoria exitosa
+[INFO] 03:21:55:727 KERNEL_SCHEDULER/(940195:940195): Handshake exitoso
+[INFO] 03:21:55:727 KERNEL_SCHEDULER/(940195:940195): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 03:21:55:727 KERNEL_SCHEDULER/(940195:940195): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: proceso_mutex_padre.txt
+[INFO] 03:21:55:727 KERNEL_SCHEDULER/(940195:940195): ## (0) Pasa del estado NEW al estado READY
+[INFO] 03:21:55:727 KERNEL_SCHEDULER/(940195:940197): Kernel Scheduler conectada con Kernel Memory
+[INFO] 03:22:06:261 KERNEL_SCHEDULER/(940195:940198): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 03:22:06:262 KERNEL_SCHEDULER/(940195:940359): Kernel Scheduler conectada con CPU
+[INFO] 03:22:07:282 KERNEL_SCHEDULER/(940195:940359): ## (0) Toma el Mutex MI_MUTEX
+[INFO] 03:22:07:785 KERNEL_SCHEDULER/(940195:940359): ## (0) - Solicito syscall: INIT_PROC
+[INFO] 03:22:07:785 KERNEL_SCHEDULER/(940195:940359): ## (1) Se crea el proceso - Estado: NEW
+[INFO] 03:22:07:785 KERNEL_SCHEDULER/(940195:940359): ## (1) Solicitud de creacion enviada a Kernel Memory - Path: proceso_mutex_hijo.txt
+[INFO] 03:22:07:785 KERNEL_SCHEDULER/(940195:940359): ## (1) Pasa del estado NEW al estado READY
+[INFO] 03:22:08:287 KERNEL_SCHEDULER/(940195:940359): ## (0) - Solicito syscall: SLEEP
+[INFO] 03:22:08:287 KERNEL_SCHEDULER/(940195:940359): ## (0) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:22:08:287 KERNEL_SCHEDULER/(940195:940198): ## (1) Pasa del estado READY al estado EXECUTE
+[INFO] 03:22:08:788 KERNEL_SCHEDULER/(940195:940359): ## (1) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:22:45:359 KERNEL_SCHEDULER/(940195:940195): ## Modulo IO tipo SLEEP conectado
+[INFO] 03:22:45:359 KERNEL_SCHEDULER/(940195:940514): Kernel Scheduler conectada con IO tipo SLEEP
+[INFO] 03:22:49:359 KERNEL_SCHEDULER/(940195:940514): ## (0) Pasa del estado BLOCK al estado READY
+[INFO] 03:22:49:359 KERNEL_SCHEDULER/(940195:940514): ## (0) Finalizo IO y pasa a READY
+[INFO] 03:22:49:359 KERNEL_SCHEDULER/(940195:940198): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 03:22:49:860 KERNEL_SCHEDULER/(940195:940359): ## (0) Libera el Mutex MI_MUTEX
+[INFO] 03:22:49:860 KERNEL_SCHEDULER/(940195:940359): ## (1) Pasa del estado BLOCK al estado READY
+[INFO] 03:22:49:860 KERNEL_SCHEDULER/(940195:940359): ## (1) Toma el Mutex MI_MUTEX
+[INFO] 03:22:50:362 KERNEL_SCHEDULER/(940195:940359): ## (0) - Solicito syscall: EXIT
+[INFO] 03:22:50:362 KERNEL_SCHEDULER/(940195:940359): ## (0) Pasa del estado EXECUTE al estado EXIT
+[INFO] 03:22:50:362 KERNEL_SCHEDULER/(940195:940359): ## (0) Finalizo su ejecucion con motivo de SUCCESS
+[INFO] 03:22:50:362 KERNEL_SCHEDULER/(940195:940198): ## (1) Pasa del estado READY al estado EXECUTE
+[INFO] 03:22:51:364 KERNEL_SCHEDULER/(940195:940359): ## (1) Libera el Mutex MI_MUTEX
+[INFO] 03:22:51:865 KERNEL_SCHEDULER/(940195:940359): ## (1) - Solicito syscall: EXIT
+[INFO] 03:22:51:865 KERNEL_SCHEDULER/(940195:940359): ## (1) Pasa del estado EXECUTE al estado EXIT
+[INFO] 03:22:51:865 KERNEL_SCHEDULER/(940195:940359): ## (1) Finalizo su ejecucion con motivo de SUCCESS
