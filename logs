@@ -1,0 +1,31 @@
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_memory$ ./bin/kernel_memory kernel_memory.config
+[INFO] 17:55:54:849 KERNEL_MEMORY/(1037365:1037365): Servidor listo para aceptar conexiones
+[INFO] 17:56:03:265 KERNEL_MEMORY/(1037365:1037365): Nuevo Memory Stick conectado. Tamanio: 1024 bytes
+[INFO] 17:56:03:265 KERNEL_MEMORY/(1037365:1037418): Kernel Memory conectada con Memory Stick
+[INFO] 17:56:11:613 KERNEL_MEMORY/(1037365:1037365): SWAP conectado - Bloque: 64 bytes, Total bloques: 32
+[INFO] 17:56:11:613 KERNEL_MEMORY/(1037365:1037365): ## PID: 999 - Proceso Creado
+[INFO] 17:56:11:613 KERNEL_MEMORY/(1037365:1037365): ## PID: 999 - Segmento Creado 0 - Tamaño: 200
+[INFO] 17:56:11:613 KERNEL_MEMORY/(1037365:1037513): Kernel Memory conectada con SWAP
+[INFO] 17:56:13:113 KERNEL_MEMORY/(1037365:1037365): TEST SUSP - Escrito patron de 200 bytes en base 0
+[INFO] 17:56:14:615 KERNEL_MEMORY/(1037365:1037365): PID: 999 - Segmento Eliminado 0
+[INFO] 17:56:14:615 KERNEL_MEMORY/(1037365:1037365): PID: 999 - Proceso Suspendido
+[INFO] 17:56:14:615 KERNEL_MEMORY/(1037365:1037365): TEST SUSP - Proceso suspendido
+[INFO] 17:56:14:615 KERNEL_MEMORY/(1037365:1037365): ## PID: 999 - Segmento Creado 0 - Tamaño: 200
+[INFO] 17:56:20:622 KERNEL_MEMORY/(1037365:1037365): PID: 999 - Proceso Des-suspendido
+[INFO] 17:56:20:622 KERNEL_MEMORY/(1037365:1037365): TEST SUSP - Proceso des-suspendido
+[INFO] 17:56:22:123 KERNEL_MEMORY/(1037365:1037365): TEST SUSP - Verificacion: OK, los bytes coinciden (base original 0, base tras des-susp 0)
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/swap$ ./bin/swap swap.config
+[INFO] 17:56:11:609 SWAP/(1037512:1037512): Creando conexion con Kernel Memory
+
+[INFO] 17:56:11:610 SWAP/(1037512:1037512): ## Conectado a Kernel Memory
+[INFO] 17:56:11:611 SWAP/(1037512:1037512): Handshake exitoso
+[INFO] 17:56:11:614 SWAP/(1037512:1037514): SWAP conectado con Kernel Memory
+[INFO] 17:56:14:614 SWAP/(1037512:1037514): ## Escritura del bloque: 0
+[INFO] 17:56:14:615 SWAP/(1037512:1037514): ## Escritura del bloque: 1
+[INFO] 17:56:14:615 SWAP/(1037512:1037514): ## Escritura del bloque: 2
+[INFO] 17:56:14:615 SWAP/(1037512:1037514): ## Escritura del bloque: 3
+[INFO] 17:56:14:615 SWAP/(1037512:1037514): ## Lectura del bloque: 0
+[INFO] 17:56:16:118 SWAP/(1037512:1037514): ## Lectura del bloque: 1
+[INFO] 17:56:17:619 SWAP/(1037512:1037514): ## Lectura del bloque: 2
+[INFO] 17:56:19:121 SWAP/(1037512:1037514): ## Lectura del bloque: 3
