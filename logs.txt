@@ -1,1 +1,109 @@
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_memory$ ./bin/kernel_memory kernel_memory.config
+[INFO] 18:19:42:510 KERNEL_MEMORY/(1117182:1117182): Servidor listo para aceptar conexiones
+[INFO] 18:19:53:330 KERNEL_MEMORY/(1117182:1117258): ## Kernel Scheduler Conectado - FD del socket: 6
+[INFO] 18:19:53:330 KERNEL_MEMORY/(1117182:1117258): Solicitud de creacion de proceso: PID = 0, path = test_io_mem4.txt
+[INFO] 18:19:53:330 KERNEL_MEMORY/(1117182:1117258): ## PID: 0 - Proceso Creado
+[INFO] 18:20:03:744 KERNEL_MEMORY/(1117182:1117182): Nuevo Memory Stick conectado. Tamanio: 1024 bytes
+[INFO] 18:20:03:744 KERNEL_MEMORY/(1117182:1117389): Kernel Memory conectada con Memory Stick
+[INFO] 18:20:08:089 KERNEL_MEMORY/(1117182:1117468): Kernel Memory conectada con CPU
+[INFO] 18:20:08:089 KERNEL_MEMORY/(1117182:1117468): Contexto enviado a CPU - PID: 0
+[INFO] 18:20:08:591 KERNEL_MEMORY/(1117182:1117468): ## PID: 0 - Obtener instruccion: 0 - Instruccion: MEM_ALLOC 0 64
+[INFO] 18:20:08:592 KERNEL_MEMORY/(1117182:1117258): ## PID: 0 - Segmento Creado 0 - Tamaño: 64
+[INFO] 18:20:08:592 KERNEL_MEMORY/(1117182:1117468): Contexto actualizado para PID: 0 - PC: 1
+[INFO] 18:20:09:589 KERNEL_MEMORY/(1117182:1117468): Contexto enviado a CPU - PID: 0
+[INFO] 18:20:10:090 KERNEL_MEMORY/(1117182:1117468): ## PID: 0 - Obtener instruccion: 1 - Instruccion: SET AX 60
+[INFO] 18:20:10:591 KERNEL_MEMORY/(1117182:1117468): ## PID: 0 - Obtener instruccion: 2 - Instruccion: SET BX 10
+[INFO] 18:20:11:092 KERNEL_MEMORY/(1117182:1117468): ## PID: 0 - Obtener instruccion: 3 - Instruccion: STDOUT AX BX
+[INFO] 18:20:11:092 KERNEL_MEMORY/(1117182:1117468): Contexto actualizado para PID: 0 - PC: 4
+[ERROR] 18:20:11:093 KERNEL_MEMORY/(1117182:1117258): Segmentation Fault en Lectura - PID: 0
+[INFO] 18:20:11:093 KERNEL_MEMORY/(1117182:1117258): PID: 0 - Proceso finalizado
 
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config test_io_mem4.txt
+[INFO] 18:19:53:328 KERNEL_SCHEDULER/(1117257:1117257): Servidor listo para aceptar conexiones
+[INFO] 18:19:53:329 KERNEL_SCHEDULER/(1117257:1117257): Conexion con memoria exitosa
+[INFO] 18:19:53:329 KERNEL_SCHEDULER/(1117257:1117257): Handshake exitoso
+[INFO] 18:19:53:330 KERNEL_SCHEDULER/(1117257:1117257): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 18:19:53:330 KERNEL_SCHEDULER/(1117257:1117257): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: test_io_mem4.txt
+[INFO] 18:19:53:330 KERNEL_SCHEDULER/(1117257:1117257): ## (0) Pasa del estado NEW al estado READY
+[INFO] 18:19:53:330 KERNEL_SCHEDULER/(1117257:1117259): Kernel Scheduler conectada con Kernel Memory
+[INFO] 18:20:03:744 KERNEL_SCHEDULER/(1117257:1117259): Kernel Memory notifica mas memoria: 1024 bytes
+[INFO] 18:20:08:088 KERNEL_SCHEDULER/(1117257:1117260): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 18:20:08:089 KERNEL_SCHEDULER/(1117257:1117469): Kernel Scheduler conectada con CPU
+[INFO] 18:20:08:592 KERNEL_SCHEDULER/(1117257:1117469): ## (0) - Solicito syscall: MEM_ALLOC
+[INFO] 18:20:08:592 KERNEL_SCHEDULER/(1117257:1117469): ## (0) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 18:20:08:592 KERNEL_SCHEDULER/(1117257:1117259): ## (0) MEM_ALLOC exitoso, pasa a READY
+[INFO] 18:20:08:592 KERNEL_SCHEDULER/(1117257:1117259): ## (0) Pasa del estado BLOCK al estado READY
+[INFO] 18:20:09:588 KERNEL_SCHEDULER/(1117257:1117260): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 18:20:11:093 KERNEL_SCHEDULER/(1117257:1117469): ## (0) - Solicito syscall: STDOUT
+[INFO] 18:20:11:093 KERNEL_SCHEDULER/(1117257:1117469): ## (0) Pasa del estado EXECUTE al estado BLOCK
+[ERROR] 18:20:11:093 KERNEL_SCHEDULER/(1117257:1117259): Kernel Memory reporto error de acceso a memoria del PID 0
+[INFO] 18:20:11:093 KERNEL_SCHEDULER/(1117257:1117259): ## (0) Pasa del estado BLOCK al estado EXIT
+[INFO] 18:20:11:093 KERNEL_SCHEDULER/(1117257:1117259): ## (0) Finalizo su ejecucion por SEG_FAULT
+[INFO] 18:20:28:561 KERNEL_SCHEDULER/(1117257:1117257): ## Modulo IO tipo STDOUT conectado
+[INFO] 18:20:28:561 KERNEL_SCHEDULER/(1117257:1117652): Kernel Scheduler conectada con IO tipo STDOUT
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/memory_stick$ ./bin/memory_stick memory_stick.config 1024
+[INFO] 18:20:03:743 MEMORY_STICK/(1117388:1117388): Servidor listo para aceptar conexiones
+[INFO] 18:20:03:744 MEMORY_STICK/(1117388:1117388): Creando conexion con Kernel Memory
+
+[INFO] 18:20:03:744 MEMORY_STICK/(1117388:1117388): ## Conectado a Kernel Memory
+[INFO] 18:20:03:744 MEMORY_STICK/(1117388:1117388): Handshake exitoso
+[INFO] 18:20:03:744 MEMORY_STICK/(1117388:1117388): Esperando conexiones de CPUs...
+[INFO] 18:20:03:744 MEMORY_STICK/(1117388:1117390): Memory Stick conectado con Kernel Memory
+[INFO] 18:20:08:088 MEMORY_STICK/(1117388:1117388): ## CPU 1 Conectada
+[INFO] 18:20:08:089 MEMORY_STICK/(1117388:1117473): Memory Stick conectada con CPU
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/cpu$ ./bin/cpu cpu.config 1
+[INFO] 18:20:08:088 1/(1117467:1117467): Creando conexion con Kernel Memory
+
+[INFO] 18:20:08:088 1/(1117467:1117467): Conexion con Kernel Memory exitosa!
+
+[INFO] 18:20:08:088 1/(1117467:1117467): Handshake exitoso
+[INFO] 18:20:08:088 1/(1117467:1117467): Creando conexion con Kernel Scheduler
+
+[INFO] 18:20:08:088 1/(1117467:1117467): Conexion con Kernel Scheduler exitosa!
+
+[INFO] 18:20:08:088 1/(1117467:1117467): Handshake exitoso
+[INFO] 18:20:08:088 1/(1117467:1117467): Creando conexion con Memory Stick
+
+[INFO] 18:20:08:088 1/(1117467:1117467): Conexion con Memory Stick exitosa!
+
+[INFO] 18:20:08:088 1/(1117467:1117467): Handshake exitoso
+[INFO] 18:20:08:089 1/(1117467:1117471): Proceso con PID 0 a EXECUTE
+[INFO] 18:20:08:090 1/(1117467:1117470): Contexto del proceso con PID 0 recibido de KERNEL MEMORY
+[INFO] 18:20:08:090 1/(1117467:1117474): INICIO DE CICLO DE INSTRUCCION CON PID: 0 
+[INFO] 18:20:08:591 1/(1117467:1117474): ## PID: 0 - FETCH - Program Counter: 0
+[INFO] 18:20:08:591 1/(1117467:1117474): INSTRUCCION RECIBIDA VALIDA CON PID: 0 
+[INFO] 18:20:08:591 1/(1117467:1117474): ## PID: 0 - Ejecutando: MEM_ALLOC - 0 - 64
+[INFO] 18:20:08:591 1/(1117467:1117474): ## PID: 0 - INTERRUPCION DETECTADA - Motivo: MEM_ALLOC
+[INFO] 18:20:08:591 1/(1117467:1117474): Parametro 1: 0
+[INFO] 18:20:08:591 1/(1117467:1117474): Parametro 2: 64
+[INFO] 18:20:08:591 1/(1117467:1117474): CIERRE DE CICLO DE INSTRUCCION CON PID: 0 
+[INFO] 18:20:08:593 1/(1117467:1117470): Contexto guardado en KERNEL MEMORY
+[INFO] 18:20:09:589 1/(1117467:1117471): Proceso con PID 0 a EXECUTE
+[INFO] 18:20:09:589 1/(1117467:1117470): Contexto del proceso con PID 0 recibido de KERNEL MEMORY
+[INFO] 18:20:09:589 1/(1117467:1117474): INICIO DE CICLO DE INSTRUCCION CON PID: 0 
+[INFO] 18:20:10:090 1/(1117467:1117474): ## PID: 0 - FETCH - Program Counter: 1
+[INFO] 18:20:10:090 1/(1117467:1117474): INSTRUCCION RECIBIDA VALIDA CON PID: 0 
+[INFO] 18:20:10:091 1/(1117467:1117474): ## PID: 0 - Ejecutando: SET - AX - 60
+[INFO] 18:20:10:091 1/(1117467:1117474): ## PID: 0 - CONTINUANDO CICLO DE INSTRUCCION
+[INFO] 18:20:10:591 1/(1117467:1117474): ## PID: 0 - FETCH - Program Counter: 2
+[INFO] 18:20:10:591 1/(1117467:1117474): INSTRUCCION RECIBIDA VALIDA CON PID: 0 
+[INFO] 18:20:10:592 1/(1117467:1117474): ## PID: 0 - Ejecutando: SET - BX - 10
+[INFO] 18:20:10:592 1/(1117467:1117474): ## PID: 0 - CONTINUANDO CICLO DE INSTRUCCION
+[INFO] 18:20:11:090 1/(1117467:1117471): ## Interrupcion recibida
+[INFO] 18:20:11:092 1/(1117467:1117474): ## PID: 0 - FETCH - Program Counter: 3
+[INFO] 18:20:11:092 1/(1117467:1117474): INSTRUCCION RECIBIDA VALIDA CON PID: 0 
+[INFO] 18:20:11:092 1/(1117467:1117474): ## PID: 0 - Ejecutando: STDOUT - AX - BX
+[INFO] 18:20:11:092 1/(1117467:1117474): ## PID: 0 - INTERRUPCION DETECTADA - Motivo: STDOUT
+[INFO] 18:20:11:092 1/(1117467:1117474): Parametro 1: 60
+[INFO] 18:20:11:092 1/(1117467:1117474): Parametro 2: 10
+[INFO] 18:20:11:093 1/(1117467:1117474): CIERRE DE CICLO DE INSTRUCCION CON PID: 0 
+[INFO] 18:20:11:092 1/(1117467:1117470): Contexto guardado en KERNEL MEMORY
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/io$ ./bin/io io.config STDOUT
+[INFO] 18:20:28:560 IO/(1117651:1117651): Creando conexion con Kernel Scheduler
+
+[INFO] 18:20:28:561 IO/(1117651:1117651): ## Conectado a Kernel Scheduler
+[INFO] 18:20:28:561 IO/(1117651:1117651): Handshake exitoso
+[INFO] 18:20:28:561 IO/(1117651:1117653): IO de tipo STDOUT lista para atender peticiones
