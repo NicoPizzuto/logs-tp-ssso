@@ -1,3 +1,1 @@
-grep: obj/kernel_scheduler.o: binary file matches
-grep: obj/atender_conexiones.o: binary file matches
-grep: bin/kernel_scheduler: binary file matches
+
