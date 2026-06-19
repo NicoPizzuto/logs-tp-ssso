@@ -1,1 +1,62 @@
-
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config proceso_inicial_comp.prc
+[INFO] 15:57:04:605 KERNEL_SCHEDULER/(1310598:1310598): Servidor listo para aceptar conexiones
+[INFO] 15:57:04:605 KERNEL_SCHEDULER/(1310598:1310598): ## Conectado a Kernel Memory
+[INFO] 15:57:04:605 KERNEL_SCHEDULER/(1310598:1310598): Handshake exitoso
+[INFO] 15:57:04:605 KERNEL_SCHEDULER/(1310598:1310598): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 15:57:04:605 KERNEL_SCHEDULER/(1310598:1310598): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: proceso_inicial_comp.prc
+[INFO] 15:57:04:605 KERNEL_SCHEDULER/(1310598:1310598): ## (0) Pasa del estado NEW al estado READY
+[INFO] 15:57:04:605 KERNEL_SCHEDULER/(1310598:1310600): Kernel Scheduler conectada con Kernel Memory
+[INFO] 15:57:16:167 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 256 bytes
+[INFO] 15:57:21:637 KERNEL_SCHEDULER/(1310598:1310598): ## CPU 1 Conectada
+[INFO] 15:57:21:637 KERNEL_SCHEDULER/(1310598:1310601): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 15:57:21:638 KERNEL_SCHEDULER/(1310598:1310777): Kernel Scheduler conectada con CPU
+[INFO] 15:57:22:146 KERNEL_SCHEDULER/(1310598:1310777): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 15:57:22:146 KERNEL_SCHEDULER/(1310598:1310777): ## (1) Se crea el proceso - Estado: NEW
+[INFO] 15:57:22:146 KERNEL_SCHEDULER/(1310598:1310777): ## (1) Solicitud de creacion enviada a Kernel Memory - Path: hijo_frag.prc
+[INFO] 15:57:22:146 KERNEL_SCHEDULER/(1310598:1310777): ## (1) Pasa del estado NEW al estado READY
+[INFO] 15:57:22:651 KERNEL_SCHEDULER/(1310598:1310777): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 15:57:22:651 KERNEL_SCHEDULER/(1310598:1310777): ## (2) Se crea el proceso - Estado: NEW
+[INFO] 15:57:22:651 KERNEL_SCHEDULER/(1310598:1310777): ## (2) Solicitud de creacion enviada a Kernel Memory - Path: hijo_loop.prc
+[INFO] 15:57:22:651 KERNEL_SCHEDULER/(1310598:1310777): ## (2) Pasa del estado NEW al estado READY
+[INFO] 15:57:23:152 KERNEL_SCHEDULER/(1310598:1310777): ## (0) - Solicitó syscall: EXIT
+[INFO] 15:57:23:152 KERNEL_SCHEDULER/(1310598:1310777): ## (0) Pasa del estado EXECUTE al estado EXIT
+[INFO] 15:57:23:152 KERNEL_SCHEDULER/(1310598:1310777): ## (0) finalizó su ejecución con motivo de SUCCESS
+[INFO] 15:57:23:152 KERNEL_SCHEDULER/(1310598:1310601): ## (1) Pasa del estado READY al estado EXECUTE
+[INFO] 15:57:23:152 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 256 bytes
+[INFO] 15:57:25:774 KERNEL_SCHEDULER/(1310598:1310598): ## CPU 2 Conectada
+[INFO] 15:57:25:774 KERNEL_SCHEDULER/(1310598:1310601): ## (2) Pasa del estado READY al estado EXECUTE
+[INFO] 15:57:25:774 KERNEL_SCHEDULER/(1310598:1310857): Kernel Scheduler conectada con CPU
+[INFO] 15:57:33:783 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: MEM_ALLOC
+[INFO] 15:57:33:783 KERNEL_SCHEDULER/(1310598:1310600): ## (1) MEM_ALLOC exitoso, continua con la ejecucion
+[INFO] 15:57:34:284 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: MEM_ALLOC
+[INFO] 15:57:34:284 KERNEL_SCHEDULER/(1310598:1310600): ## (1) MEM_ALLOC exitoso, continua con la ejecucion
+[INFO] 15:57:34:786 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: MEM_ALLOC
+[INFO] 15:57:34:787 KERNEL_SCHEDULER/(1310598:1310600): ## (1) MEM_ALLOC exitoso, continua con la ejecucion
+[INFO] 15:57:35:289 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: MEM_FREE
+[INFO] 15:57:35:289 KERNEL_SCHEDULER/(1310598:1310600): ## (1) MEM_FREE exitoso, continua con la ejecucion
+[INFO] 15:57:35:289 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 128 bytes
+[INFO] 15:57:35:791 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: MEM_ALLOC
+[INFO] 15:57:35:791 KERNEL_SCHEDULER/(1310598:1310600): ## Inicio de compactación
+[INFO] 15:57:35:806 KERNEL_SCHEDULER/(1310598:1310857): ## (2) Pasa del estado EXECUTE al estado READY
+[INFO] 15:57:35:806 KERNEL_SCHEDULER/(1310598:1310857): ## (2) Desalojado por compactación
+[INFO] 15:57:41:808 KERNEL_SCHEDULER/(1310598:1310600): ## Fin de compactación
+[INFO] 15:57:41:808 KERNEL_SCHEDULER/(1310598:1310600): ## (1) MEM_ALLOC exitoso, continua con la ejecucion
+[INFO] 15:57:41:808 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 15:57:41:808 KERNEL_SCHEDULER/(1310598:1310601): ## (2) Pasa del estado READY al estado EXECUTE
+[INFO] 15:57:42:309 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: MEM_FREE
+[INFO] 15:57:42:309 KERNEL_SCHEDULER/(1310598:1310600): ## (1) MEM_FREE exitoso, continua con la ejecucion
+[INFO] 15:57:42:310 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 64 bytes
+[INFO] 15:57:42:811 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: MEM_FREE
+[INFO] 15:57:42:811 KERNEL_SCHEDULER/(1310598:1310600): ## (1) MEM_FREE exitoso, continua con la ejecucion
+[INFO] 15:57:42:811 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 128 bytes
+[INFO] 15:57:43:313 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: MEM_FREE
+[INFO] 15:57:43:313 KERNEL_SCHEDULER/(1310598:1310600): ## (1) MEM_FREE exitoso, continua con la ejecucion
+[INFO] 15:57:43:313 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 256 bytes
+[INFO] 15:57:43:814 KERNEL_SCHEDULER/(1310598:1310777): ## (1) - Solicitó syscall: EXIT
+[INFO] 15:57:43:815 KERNEL_SCHEDULER/(1310598:1310777): ## (1) Pasa del estado EXECUTE al estado EXIT
+[INFO] 15:57:43:815 KERNEL_SCHEDULER/(1310598:1310777): ## (1) finalizó su ejecución con motivo de SUCCESS
+[INFO] 15:57:43:815 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 256 bytes
+[INFO] 15:57:44:822 KERNEL_SCHEDULER/(1310598:1310857): ## (2) - Solicitó syscall: EXIT
+[INFO] 15:57:44:822 KERNEL_SCHEDULER/(1310598:1310857): ## (2) Pasa del estado EXECUTE al estado EXIT
+[INFO] 15:57:44:822 KERNEL_SCHEDULER/(1310598:1310857): ## (2) finalizó su ejecución con motivo de SUCCESS
+[INFO] 15:57:44:822 KERNEL_SCHEDULER/(1310598:1310600): Kernel Memory notifica mas memoria: 256 bytes
