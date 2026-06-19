@@ -1,1 +1,55 @@
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config proceso_inicial_herencia.prc
+[INFO] 22:39:32:027 KERNEL_SCHEDULER/(1346490:1346490): Servidor listo para aceptar conexiones
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346490): ## Conectado a Kernel Memory
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346490): Handshake exitoso
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346490): ## Se crea la cola de READY de prioridad 0 con algoritmo FIFO
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346490): ## Se crea la cola de READY de prioridad 1 con algoritmo FIFO
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346490): ## Se crea la cola de READY de prioridad 2 con algoritmo FIFO
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346490): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346490): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: proceso_inicial_herencia.prc
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346490): ## (0) Pasa del estado NEW al estado READY
+[INFO] 22:39:32:028 KERNEL_SCHEDULER/(1346490:1346491): Kernel Scheduler conectada con Kernel Memory
+[INFO] 22:39:35:602 KERNEL_SCHEDULER/(1346490:1346491): Kernel Memory notifica mas memoria: 1064 bytes
+[INFO] 22:39:39:612 KERNEL_SCHEDULER/(1346490:1346490): ## CPU 1 Conectada
+[INFO] 22:39:39:613 KERNEL_SCHEDULER/(1346490:1346493): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 22:39:39:614 KERNEL_SCHEDULER/(1346490:1346608): Kernel Scheduler conectada con CPU
+[INFO] 22:39:40:122 KERNEL_SCHEDULER/(1346490:1346608): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 22:39:40:123 KERNEL_SCHEDULER/(1346490:1346608): ## (1) Se crea el proceso - Estado: NEW
+[INFO] 22:39:40:123 KERNEL_SCHEDULER/(1346490:1346608): ## (1) Solicitud de creacion enviada a Kernel Memory - Path: hijo_baja.prc
+[INFO] 22:39:40:123 KERNEL_SCHEDULER/(1346490:1346608): ## (1) Pasa del estado NEW al estado READY
+[INFO] 22:39:40:624 KERNEL_SCHEDULER/(1346490:1346608): ## (0) - Solicitó syscall: EXIT
+[INFO] 22:39:40:624 KERNEL_SCHEDULER/(1346490:1346608): ## (0) Pasa del estado EXECUTE al estado EXIT
+[INFO] 22:39:40:624 KERNEL_SCHEDULER/(1346490:1346608): ## (0) finalizó su ejecución con motivo de SUCCESS
+[INFO] 22:39:40:624 KERNEL_SCHEDULER/(1346490:1346493): ## (1) Pasa del estado READY al estado EXECUTE
+[INFO] 22:39:40:625 KERNEL_SCHEDULER/(1346490:1346491): Kernel Memory notifica mas memoria: 1064 bytes
+[INFO] 22:39:41:126 KERNEL_SCHEDULER/(1346490:1346608): ## (1) - Solicitó syscall: MUTEX_CREATE
+[INFO] 22:39:41:629 KERNEL_SCHEDULER/(1346490:1346608): ## (1) - Solicitó syscall: MUTEX_LOCK
+[INFO] 22:39:41:629 KERNEL_SCHEDULER/(1346490:1346608): ## (1) Toma el Mutex m1
+[INFO] 22:39:42:178 KERNEL_SCHEDULER/(1346490:1346608): ## (1) - Solicitó syscall: INIT_PROC
+[INFO] 22:39:42:178 KERNEL_SCHEDULER/(1346490:1346608): ## (2) Se crea el proceso - Estado: NEW
+[INFO] 22:39:42:178 KERNEL_SCHEDULER/(1346490:1346608): ## (2) Solicitud de creacion enviada a Kernel Memory - Path: hijo_alta.prc
+[INFO] 22:39:42:178 KERNEL_SCHEDULER/(1346490:1346608): ## (2) Pasa del estado NEW al estado READY
+[INFO] 22:39:43:283 KERNEL_SCHEDULER/(1346490:1346490): ## CPU 2 Conectada
+[INFO] 22:39:43:283 KERNEL_SCHEDULER/(1346490:1346493): ## (2) Pasa del estado READY al estado EXECUTE
+[INFO] 22:39:43:284 KERNEL_SCHEDULER/(1346490:1346701): Kernel Scheduler conectada con CPU
+[INFO] 22:39:43:789 KERNEL_SCHEDULER/(1346490:1346701): ## (2) - Solicitó syscall: MUTEX_LOCK
+[INFO] 22:39:43:789 KERNEL_SCHEDULER/(1346490:1346701): ## 1 Cambio de prioridad: 2 - 0
+[INFO] 22:39:43:790 KERNEL_SCHEDULER/(1346490:1346701): ## (2) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 22:39:45:687 KERNEL_SCHEDULER/(1346490:1346608): ## (1) - Solicitó syscall: MUTEX_UNLOCK
+[INFO] 22:39:45:687 KERNEL_SCHEDULER/(1346490:1346608): ## (1) Libera el Mutex m1
+[INFO] 22:39:45:687 KERNEL_SCHEDULER/(1346490:1346608): ## 1 Cambio de prioridad: 0 - 2
+[INFO] 22:39:45:687 KERNEL_SCHEDULER/(1346490:1346608): ## (2) Pasa del estado BLOCK al estado READY
+[INFO] 22:39:45:687 KERNEL_SCHEDULER/(1346490:1346608): ## (2) finalizó IO y pasa a READY
+[INFO] 22:39:45:687 KERNEL_SCHEDULER/(1346490:1346608): ## (2) Toma el Mutex m1
+[INFO] 22:39:45:687 KERNEL_SCHEDULER/(1346490:1346493): ## (2) Pasa del estado READY al estado EXECUTE
+[INFO] 22:39:46:234 KERNEL_SCHEDULER/(1346490:1346608): ## (1) - Solicitó syscall: EXIT
+[INFO] 22:39:46:234 KERNEL_SCHEDULER/(1346490:1346608): ## (1) Pasa del estado EXECUTE al estado EXIT
+[INFO] 22:39:46:234 KERNEL_SCHEDULER/(1346490:1346608): ## (1) finalizó su ejecución con motivo de SUCCESS
+[INFO] 22:39:46:234 KERNEL_SCHEDULER/(1346490:1346491): Kernel Memory notifica mas memoria: 1064 bytes
+[INFO] 22:39:47:196 KERNEL_SCHEDULER/(1346490:1346701): ## (2) - Solicitó syscall: MUTEX_UNLOCK
+[INFO] 22:39:47:196 KERNEL_SCHEDULER/(1346490:1346701): ## (2) Libera el Mutex m1
+[INFO] 22:39:47:697 KERNEL_SCHEDULER/(1346490:1346701): ## (2) - Solicitó syscall: EXIT
+[INFO] 22:39:47:697 KERNEL_SCHEDULER/(1346490:1346701): ## (2) Pasa del estado EXECUTE al estado EXIT
+[INFO] 22:39:47:697 KERNEL_SCHEDULER/(1346490:1346701): ## (2) finalizó su ejecución con motivo de SUCCESS
+[INFO] 22:39:47:698 KERNEL_SCHEDULER/(1346490:1346491): Kernel Memory notifica mas memoria: 1064 bytes
 
