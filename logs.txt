@@ -1,1 +1,6 @@
-
+src/kernel_scheduler.c: In function ‘iniciar_procesos’:
+src/kernel_scheduler.c:443:43: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  443 |     PCB* nuevo_proceso = (ruta_del_archivo, prioridad);
+      |                                           ^
+src/kernel_scheduler.c:443:26: warning: initialization of ‘PCB *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  443 |     PCB* nuevo_proceso = (ruta_del_archivo, prioridad);
