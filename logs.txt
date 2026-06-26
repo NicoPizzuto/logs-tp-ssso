@@ -66,4 +66,63 @@ utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler ker
 [INFO] 20:53:20:807 KERNEL_SCHEDULER/(1405568:1405650): ## (2) finalizó su ejecución con motivo de SUCCESS
 [INFO] 20:53:20:808 KERNEL_SCHEDULER/(1405568:1405570): Kernel Memory notifica mas memoria: 0 bytes
 
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_memory$ ./bin/kernel_memory kernel_memory.config
+[INFO] 21:04:18:412 KERNEL_MEMORY/(1407771:1407771): Servidor listo para aceptar conexiones
+[INFO] 21:05:00:330 KERNEL_MEMORY/(1407771:1407864): ## Kernel Scheduler Conectado - FD del socket: 6
+[INFO] 21:05:00:331 KERNEL_MEMORY/(1407771:1407864): Solicitud de creacion de proceso: PID = 0, path = proceso_oom.prc
+[INFO] 21:05:00:332 KERNEL_MEMORY/(1407771:1407864): ## PID: 0 - Proceso Creado
+[INFO] 21:05:19:806 KERNEL_MEMORY/(1407771:1407771): ## Memory Stick de 256 bytes Conectada
+[INFO] 21:05:19:806 KERNEL_MEMORY/(1407771:1407771): Memory Stick registrado - IP 127.0.0.1 - puerto 8033
+[INFO] 21:05:19:807 KERNEL_MEMORY/(1407771:1407960): Kernel Memory conectada con Memory Stick
+[INFO] 21:05:25:262 KERNEL_MEMORY/(1407771:1407771): ## CPU 1 Conectada
+[INFO] 21:05:25:263 KERNEL_MEMORY/(1407771:1408044): Kernel Memory conectada con CPU
+[INFO] 21:05:25:263 KERNEL_MEMORY/(1407771:1408044): Lista de Memory Sticks enviada a CPU
+[INFO] 21:05:25:267 KERNEL_MEMORY/(1407771:1408044): Contexto enviado a CPU - PID: 0
+[INFO] 21:05:25:770 KERNEL_MEMORY/(1407771:1408044): ## PID: 0 - Obtener instrucción: 0 - Instrucción: MEM_ALLOC 0 99999
+[INFO] 21:05:25:771 KERNEL_MEMORY/(1407771:1408044): Contexto actualizado para PID: 0 - PC: 1
+[INFO] 21:05:25:771 KERNEL_MEMORY/(1407771:1408044): Contexto actualizado para PID: 0 - PC: 1
+[INFO] 21:05:25:771 KERNEL_MEMORY/(1407771:1407864): PID: 0 - Proceso finalizado
 
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config proceso_oom.prc
+[INFO] 21:05:00:326 KERNEL_SCHEDULER/(1407863:1407863): Servidor listo para aceptar conexiones
+[INFO] 21:05:00:327 KERNEL_SCHEDULER/(1407863:1407863): ## Conectado a Kernel Memory
+[INFO] 21:05:00:327 KERNEL_SCHEDULER/(1407863:1407863): Handshake exitoso
+[INFO] 21:05:00:329 KERNEL_SCHEDULER/(1407863:1407863): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 21:05:00:329 KERNEL_SCHEDULER/(1407863:1407863): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: proceso_oom.prc
+[INFO] 21:05:00:330 KERNEL_SCHEDULER/(1407863:1407863): ## (0) Pasa del estado NEW al estado READY
+[INFO] 21:05:00:330 KERNEL_SCHEDULER/(1407863:1407865): Kernel Scheduler conectada con Kernel Memory
+[INFO] 21:05:19:806 KERNEL_SCHEDULER/(1407863:1407865): Kernel Memory notifica mas memoria: 256 bytes
+[INFO] 21:05:25:262 KERNEL_SCHEDULER/(1407863:1407863): ## CPU 1 Conectada
+[INFO] 21:05:25:262 KERNEL_SCHEDULER/(1407863:1407866): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 21:05:25:263 KERNEL_SCHEDULER/(1407863:1408045): Kernel Scheduler conectada con CPU
+[INFO] 21:05:25:771 KERNEL_SCHEDULER/(1407863:1408045): ## (0) - Solicitó syscall: MEM_ALLOC
+[WARNING] 21:05:25:771 KERNEL_SCHEDULER/(1407863:1407865): Kernel Memory no pudo crear el segmento del PID 0
+[INFO] 21:05:25:771 KERNEL_SCHEDULER/(1407863:1407865): ## (0) Pasa del estado EXECUTE al estado EXIT
+[INFO] 21:05:25:771 KERNEL_SCHEDULER/(1407863:1407865): ## (0) finalizó su ejecución con motivo de OUT_OF_MEMORY
+[INFO] 21:05:25:772 KERNEL_SCHEDULER/(1407863:1407865): Kernel Memory notifica mas memoria: 256 bytes
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/cpu$ ./bin/cpu cpu.config 1
+[INFO] 21:05:25:261 1/(1408043:1408043): Creando conexion con Kernel Memory
+
+[INFO] 21:05:25:261 1/(1408043:1408043): Conexion con Kernel Memory exitosa!
+
+[INFO] 21:05:25:261 1/(1408043:1408043): Handshake exitoso
+[INFO] 21:05:25:262 1/(1408043:1408043): Creando conexion con Kernel Scheduler
+
+[INFO] 21:05:25:262 1/(1408043:1408043): Conexion con Kernel Scheduler exitosa!
+
+[INFO] 21:05:25:262 1/(1408043:1408043): Handshake exitoso
+[INFO] 21:05:25:266 1/(1408043:1408047): Proceso con PID 0 a EXECUTE
+[INFO] 21:05:25:268 1/(1408043:1408046): Memory Stick en lista - ID: 0 - IP: 127.0.0.1 - PUERTO: 8033 - BASE: 0 - LIMITE: 256
+[INFO] 21:05:25:269 1/(1408043:1408046): Handshake exitoso
+[INFO] 21:05:25:269 1/(1408043:1408046): Conexion establecida con Memory Stick ID: 0 - FD: 7 - IP: 127.0.0.1 - PUERTO: 8033
+[INFO] 21:05:25:269 1/(1408043:1408046): Contexto del proceso con PID 0 recibido de KERNEL MEMORY
+[INFO] 21:05:25:270 1/(1408043:1408050): INICIO DE CICLO DE INSTRUCCION CON PID: 0 
+[INFO] 21:05:25:771 1/(1408043:1408050): ## PID: 0 - FETCH - Program Counter: 0
+[INFO] 21:05:25:771 1/(1408043:1408050): INSTRUCCION RECIBIDA VALIDA CON PID: 0 
+[INFO] 21:05:25:771 1/(1408043:1408050): ## PID: 0 - Ejecutando: MEM_ALLOC - 0 - 99999
+[INFO] 21:05:25:771 1/(1408043:1408050): ## PID: 0 - INTERRUPCION DETECTADA - Motivo: MEM_ALLOC
+[INFO] 21:05:25:771 1/(1408043:1408050): Parametro 1: 0
+[INFO] 21:05:25:771 1/(1408043:1408050): Parametro 2: 99999
+[INFO] 21:05:25:771 1/(1408043:1408050): CIERRE DE CICLO DE INSTRUCCION CON PID: 0 
+[INFO] 21:05:25:771 1/(1408043:1408046): Contexto guardado en KERNEL MEMORY
