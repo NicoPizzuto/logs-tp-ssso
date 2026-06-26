@@ -1,1 +1,69 @@
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_memory$ ./bin/kernel_memory kernel_memory.config
+[INFO] 20:53:01:010 KERNEL_MEMORY/(1405516:1405516): Servidor listo para aceptar conexiones
+[INFO] 20:53:10:115 KERNEL_MEMORY/(1405516:1405569): ## Kernel Scheduler Conectado - FD del socket: 6
+[INFO] 20:53:10:116 KERNEL_MEMORY/(1405516:1405569): Solicitud de creacion de proceso: PID = 0, path = proceso_inicial.prc
+[INFO] 20:53:10:116 KERNEL_MEMORY/(1405516:1405569): ## PID: 0 - Proceso Creado
+[INFO] 20:53:16:225 KERNEL_MEMORY/(1405516:1405516): ## CPU 1 Conectada
+[INFO] 20:53:16:226 KERNEL_MEMORY/(1405516:1405649): Kernel Memory conectada con CPU
+[INFO] 20:53:16:226 KERNEL_MEMORY/(1405516:1405649): Lista de Memory Sticks enviada a CPU
+[INFO] 20:53:16:226 KERNEL_MEMORY/(1405516:1405649): Contexto enviado a CPU - PID: 0
+[INFO] 20:53:16:727 KERNEL_MEMORY/(1405516:1405649): ## PID: 0 - Obtener instrucción: 0 - Instrucción: INIT_PROC hijo.prc 0
+[INFO] 20:53:16:728 KERNEL_MEMORY/(1405516:1405649): Contexto actualizado para PID: 0 - PC: 1
+[INFO] 20:53:16:728 KERNEL_MEMORY/(1405516:1405649): Contexto actualizado para PID: 0 - PC: 1
+[INFO] 20:53:16:729 KERNEL_MEMORY/(1405516:1405569): Solicitud de creacion de proceso: PID = 1, path = hijo.prc
+[INFO] 20:53:16:729 KERNEL_MEMORY/(1405516:1405569): ## PID: 1 - Proceso Creado
+[INFO] 20:53:16:729 KERNEL_MEMORY/(1405516:1405649): Contexto enviado a CPU - PID: 0
+[INFO] 20:53:17:230 KERNEL_MEMORY/(1405516:1405649): ## PID: 0 - Obtener instrucción: 1 - Instrucción: INIT_PROC hijo.prc 0
+[INFO] 20:53:17:231 KERNEL_MEMORY/(1405516:1405649): Contexto actualizado para PID: 0 - PC: 2
+[INFO] 20:53:17:231 KERNEL_MEMORY/(1405516:1405649): Contexto actualizado para PID: 0 - PC: 2
+[INFO] 20:53:17:233 KERNEL_MEMORY/(1405516:1405649): Contexto enviado a CPU - PID: 0
+[INFO] 20:53:17:232 KERNEL_MEMORY/(1405516:1405569): Solicitud de creacion de proceso: PID = 2, path = hijo.prc
+[INFO] 20:53:17:233 KERNEL_MEMORY/(1405516:1405569): ## PID: 2 - Proceso Creado
+[INFO] 20:53:17:737 KERNEL_MEMORY/(1405516:1405649): ## PID: 0 - Obtener instrucción: 2 - Instrucción: EXIT
+[INFO] 20:53:17:738 KERNEL_MEMORY/(1405516:1405569): PID: 0 - Proceso finalizado
+[INFO] 20:53:17:739 KERNEL_MEMORY/(1405516:1405649): Contexto enviado a CPU - PID: 1
+[INFO] 20:53:18:239 KERNEL_MEMORY/(1405516:1405649): ## PID: 1 - Obtener instrucción: 0 - Instrucción: NOOP
+[INFO] 20:53:18:741 KERNEL_MEMORY/(1405516:1405649): ## PID: 1 - Obtener instrucción: 1 - Instrucción: NOOP
+[INFO] 20:53:19:241 KERNEL_MEMORY/(1405516:1405649): ## PID: 1 - Obtener instrucción: 2 - Instrucción: EXIT
+[INFO] 20:53:19:242 KERNEL_MEMORY/(1405516:1405569): PID: 1 - Proceso finalizado
+[INFO] 20:53:19:242 KERNEL_MEMORY/(1405516:1405649): Contexto enviado a CPU - PID: 2
+[INFO] 20:53:19:805 KERNEL_MEMORY/(1405516:1405649): ## PID: 2 - Obtener instrucción: 0 - Instrucción: NOOP
+[INFO] 20:53:20:306 KERNEL_MEMORY/(1405516:1405649): ## PID: 2 - Obtener instrucción: 1 - Instrucción: NOOP
+[INFO] 20:53:20:806 KERNEL_MEMORY/(1405516:1405649): ## PID: 2 - Obtener instrucción: 2 - Instrucción: EXIT
+[INFO] 20:53:20:808 KERNEL_MEMORY/(1405516:1405569): PID: 2 - Proceso finalizado
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config proceso_inicial.prc
+[INFO] 20:53:10:115 KERNEL_SCHEDULER/(1405568:1405568): Servidor listo para aceptar conexiones
+[INFO] 20:53:10:115 KERNEL_SCHEDULER/(1405568:1405568): ## Conectado a Kernel Memory
+[INFO] 20:53:10:115 KERNEL_SCHEDULER/(1405568:1405568): Handshake exitoso
+[INFO] 20:53:10:115 KERNEL_SCHEDULER/(1405568:1405568): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 20:53:10:115 KERNEL_SCHEDULER/(1405568:1405568): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: proceso_inicial.prc
+[INFO] 20:53:10:115 KERNEL_SCHEDULER/(1405568:1405568): ## (0) Pasa del estado NEW al estado READY
+[INFO] 20:53:10:116 KERNEL_SCHEDULER/(1405568:1405570): Kernel Scheduler conectada con Kernel Memory
+[INFO] 20:53:16:225 KERNEL_SCHEDULER/(1405568:1405568): ## CPU 1 Conectada
+[INFO] 20:53:16:226 KERNEL_SCHEDULER/(1405568:1405571): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 20:53:16:226 KERNEL_SCHEDULER/(1405568:1405650): Kernel Scheduler conectada con CPU
+[INFO] 20:53:16:729 KERNEL_SCHEDULER/(1405568:1405650): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 20:53:16:729 KERNEL_SCHEDULER/(1405568:1405650): ## (1) Se crea el proceso - Estado: NEW
+[INFO] 20:53:16:729 KERNEL_SCHEDULER/(1405568:1405650): ## (1) Solicitud de creacion enviada a Kernel Memory - Path: hijo.prc
+[INFO] 20:53:16:729 KERNEL_SCHEDULER/(1405568:1405650): ## (1) Pasa del estado NEW al estado READY
+[INFO] 20:53:17:232 KERNEL_SCHEDULER/(1405568:1405650): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 20:53:17:232 KERNEL_SCHEDULER/(1405568:1405650): ## (2) Se crea el proceso - Estado: NEW
+[INFO] 20:53:17:232 KERNEL_SCHEDULER/(1405568:1405650): ## (2) Solicitud de creacion enviada a Kernel Memory - Path: hijo.prc
+[INFO] 20:53:17:232 KERNEL_SCHEDULER/(1405568:1405650): ## (2) Pasa del estado NEW al estado READY
+[INFO] 20:53:17:738 KERNEL_SCHEDULER/(1405568:1405650): ## (0) - Solicitó syscall: EXIT
+[INFO] 20:53:17:738 KERNEL_SCHEDULER/(1405568:1405650): ## (0) Pasa del estado EXECUTE al estado EXIT
+[INFO] 20:53:17:738 KERNEL_SCHEDULER/(1405568:1405650): ## (0) finalizó su ejecución con motivo de SUCCESS
+[INFO] 20:53:17:738 KERNEL_SCHEDULER/(1405568:1405571): ## (1) Pasa del estado READY al estado EXECUTE
+[INFO] 20:53:17:738 KERNEL_SCHEDULER/(1405568:1405570): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 20:53:19:242 KERNEL_SCHEDULER/(1405568:1405650): ## (1) - Solicitó syscall: EXIT
+[INFO] 20:53:19:242 KERNEL_SCHEDULER/(1405568:1405650): ## (1) Pasa del estado EXECUTE al estado EXIT
+[INFO] 20:53:19:242 KERNEL_SCHEDULER/(1405568:1405650): ## (1) finalizó su ejecución con motivo de SUCCESS
+[INFO] 20:53:19:242 KERNEL_SCHEDULER/(1405568:1405571): ## (2) Pasa del estado READY al estado EXECUTE
+[INFO] 20:53:19:242 KERNEL_SCHEDULER/(1405568:1405570): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 20:53:20:807 KERNEL_SCHEDULER/(1405568:1405650): ## (2) - Solicitó syscall: EXIT
+[INFO] 20:53:20:807 KERNEL_SCHEDULER/(1405568:1405650): ## (2) Pasa del estado EXECUTE al estado EXIT
+[INFO] 20:53:20:807 KERNEL_SCHEDULER/(1405568:1405650): ## (2) finalizó su ejecución con motivo de SUCCESS
+[INFO] 20:53:20:808 KERNEL_SCHEDULER/(1405568:1405570): Kernel Memory notifica mas memoria: 0 bytes
+
 
