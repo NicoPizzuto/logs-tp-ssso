@@ -235,4 +235,67 @@ utnso@utnso:~/tp-2026-1c-BreakPoint/cpu$ ./bin/cpu cpu.config 1
 [INFO] 21:14:26:482 1/(1409487:1409494): ## PID: 1 - INTERRUPCION DETECTADA - Motivo: EXIT
 [INFO] 21:14:26:482 1/(1409487:1409494): CIERRE DE CICLO DE INSTRUCCION CON PID: 1
 
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_memory$ ./bin/kernel_memory kernel_memory.config
+[INFO] 21:23:36:961 KERNEL_MEMORY/(1415114:1415114): Servidor listo para aceptar conexiones
+[INFO] 21:24:26:318 KERNEL_MEMORY/(1415114:1415555): ## Kernel Scheduler Conectado - FD del socket: 6
+[INFO] 21:24:26:318 KERNEL_MEMORY/(1415114:1415555): Solicitud de creacion de proceso: PID = 0, path = proceso_susp.prc
+[INFO] 21:24:26:318 KERNEL_MEMORY/(1415114:1415555): ## PID: 0 - Proceso Creado
+[INFO] 21:24:57:947 KERNEL_MEMORY/(1415114:1415114): ## Memory Stick de 1024 bytes Conectada
+[INFO] 21:24:57:947 KERNEL_MEMORY/(1415114:1415114): Memory Stick registrado - IP 127.0.0.1 - puerto 8033
+[INFO] 21:24:57:948 KERNEL_MEMORY/(1415114:1415666): Kernel Memory conectada con Memory Stick
+[INFO] 21:26:25:533 KERNEL_MEMORY/(1415114:1415114): ## CPU 1 Conectada
+[INFO] 21:26:25:534 KERNEL_MEMORY/(1415114:1415864): Kernel Memory conectada con CPU
+[INFO] 21:26:25:534 KERNEL_MEMORY/(1415114:1415864): Lista de Memory Sticks enviada a CPU
+[INFO] 21:26:25:542 KERNEL_MEMORY/(1415114:1415864): Contexto enviado a CPU - PID: 0
+[INFO] 21:26:26:043 KERNEL_MEMORY/(1415114:1415864): ## PID: 0 - Obtener instrucción: 0 - Instrucción: SLEEP 8000
+[INFO] 21:26:26:044 KERNEL_MEMORY/(1415114:1415864): Contexto actualizado para PID: 0 - PC: 1
+[INFO] 21:26:26:044 KERNEL_MEMORY/(1415114:1415864): Contexto actualizado para PID: 0 - PC: 1
+[ERROR] 21:26:29:066 KERNEL_MEMORY/(1415114:1415555): Suspension PID 0: SWAP no disponible (block_size_swap = 0), no se puede suspender
+[ERROR] 21:26:34:045 KERNEL_MEMORY/(1415114:1415555): Chequeo de des-suspension: PID 0 no esta suspendido
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config proceso_susp.prc
+[INFO] 21:24:26:314 KERNEL_SCHEDULER/(1415549:1415549): Servidor listo para aceptar conexiones
+[INFO] 21:24:26:315 KERNEL_SCHEDULER/(1415549:1415549): ## Conectado a Kernel Memory
+[INFO] 21:24:26:316 KERNEL_SCHEDULER/(1415549:1415549): Handshake exitoso
+[INFO] 21:24:26:318 KERNEL_SCHEDULER/(1415549:1415549): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 21:24:26:318 KERNEL_SCHEDULER/(1415549:1415549): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: proceso_susp.prc
+[INFO] 21:24:26:318 KERNEL_SCHEDULER/(1415549:1415549): ## (0) Pasa del estado NEW al estado READY
+[INFO] 21:24:26:318 KERNEL_SCHEDULER/(1415549:1415554): Kernel Scheduler conectada con Kernel Memory
+[INFO] 21:24:57:947 KERNEL_SCHEDULER/(1415549:1415554): Kernel Memory notifica mas memoria: 1024 bytes
+[INFO] 21:26:19:297 KERNEL_SCHEDULER/(1415549:1415549): ## Modulo IO tipo SLEEP conectado
+[INFO] 21:26:19:297 KERNEL_SCHEDULER/(1415549:1415782): Kernel Scheduler conectada con IO tipo SLEEP
+[INFO] 21:26:25:534 KERNEL_SCHEDULER/(1415549:1415549): ## CPU 1 Conectada
+[INFO] 21:26:25:534 KERNEL_SCHEDULER/(1415549:1415556): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 21:26:25:534 KERNEL_SCHEDULER/(1415549:1415865): Kernel Scheduler conectada con CPU
+[INFO] 21:26:26:044 KERNEL_SCHEDULER/(1415549:1415865): ## (0) - Solicitó syscall: SLEEP
+[INFO] 21:26:26:044 KERNEL_SCHEDULER/(1415549:1415865): ## (0) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 21:26:29:066 KERNEL_SCHEDULER/(1415549:1415871): ## (0) Pasa del estado BLOCK al estado SUSP. BLOCK
+[WARNING] 21:26:29:067 KERNEL_SCHEDULER/(1415549:1415554): Kernel Memory no pudo suspender el proceso (resultado -1)
+[INFO] 21:26:34:045 KERNEL_SCHEDULER/(1415549:1415782): ## (0) Pasa del estado SUSP. BLOCK al estado SUSP. READY
+[INFO] 21:26:34:045 KERNEL_SCHEDULER/(1415549:1415782): ## (0) finalizó IO y pasa a SUSP. READY
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/cpu$ ./bin/cpu cpu.config 1
+[INFO] 21:26:25:532 1/(1415863:1415863): Creando conexion con Kernel Memory
+
+[INFO] 21:26:25:533 1/(1415863:1415863): Conexion con Kernel Memory exitosa!
+
+[INFO] 21:26:25:533 1/(1415863:1415863): Handshake exitoso
+[INFO] 21:26:25:533 1/(1415863:1415863): Creando conexion con Kernel Scheduler
+
+[INFO] 21:26:25:533 1/(1415863:1415863): Conexion con Kernel Scheduler exitosa!
+
+[INFO] 21:26:25:534 1/(1415863:1415863): Handshake exitoso
+[INFO] 21:26:25:535 1/(1415863:1415866): Memory Stick en lista - ID: 0 - IP: 127.0.0.1 - PUERTO: 8033 - BASE: 0 - LIMITE: 1024
+[INFO] 21:26:25:535 1/(1415863:1415866): Handshake exitoso
+[INFO] 21:26:25:535 1/(1415863:1415866): Conexion establecida con Memory Stick ID: 0 - FD: 7 - IP: 127.0.0.1 - PUERTO: 8033
+[INFO] 21:26:25:542 1/(1415863:1415867): Proceso con PID 0 a EXECUTE
+[INFO] 21:26:25:542 1/(1415863:1415866): Contexto del proceso con PID 0 recibido de KERNEL MEMORY
+[INFO] 21:26:25:543 1/(1415863:1415870): INICIO DE CICLO DE INSTRUCCION CON PID: 0 
+[INFO] 21:26:26:043 1/(1415863:1415870): ## PID: 0 - FETCH - Program Counter: 0
+[INFO] 21:26:26:043 1/(1415863:1415870): INSTRUCCION RECIBIDA VALIDA CON PID: 0 
+[INFO] 21:26:26:043 1/(1415863:1415870): ## PID: 0 - Ejecutando: SLEEP - 8000
+[INFO] 21:26:26:043 1/(1415863:1415870): ## PID: 0 - INTERRUPCION DETECTADA - Motivo: SLEEP
+[INFO] 21:26:26:043 1/(1415863:1415870): Parametro 1: 8000
+[INFO] 21:26:26:044 1/(1415863:1415870): CIERRE DE CICLO DE INSTRUCCION CON PID: 0 
+[INFO] 21:26:26:044 1/(1415863:1415866): Contexto guardado en KERNEL MEMORY
 
