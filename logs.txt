@@ -1,1 +1,596 @@
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_memory$ ./bin/kernel_memory kernel_memory.config
+[INFO] 03:16:03:780 KERNEL_MEMORY/(1437934:1437934): Servidor listo para aceptar conexiones
+[INFO] 03:16:09:796 KERNEL_MEMORY/(1437934:1437999): ## Kernel Scheduler Conectado - FD del socket: 6
+[INFO] 03:16:09:796 KERNEL_MEMORY/(1437934:1437999): Solicitud de creacion de proceso: PID = 0, path = PLANI_PRE_0.prc
+[INFO] 03:16:09:796 KERNEL_MEMORY/(1437934:1437999): ## PID: 0 - Proceso Creado
+[INFO] 03:16:37:031 KERNEL_MEMORY/(1437934:1437934): SWAP conectado - Bloque: 64 bytes, Total bloques: 32
+[INFO] 03:16:37:031 KERNEL_MEMORY/(1437934:1438082): Kernel Memory conectada con SWAP
+[INFO] 03:18:44:962 KERNEL_MEMORY/(1437934:1437934): ## CPU 1 Conectada
+[INFO] 03:18:44:962 KERNEL_MEMORY/(1437934:1438249): Kernel Memory conectada con CPU
+[INFO] 03:18:44:963 KERNEL_MEMORY/(1437934:1438249): Lista de Memory Sticks enviada a CPU
+[INFO] 03:18:44:963 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 0
+[INFO] 03:18:45:465 KERNEL_MEMORY/(1437934:1438249): ## PID: 0 - Obtener instrucción: 0 - Instrucción: INIT_PROC PLANI_PRE_1.prc 3
+[INFO] 03:18:45:466 KERNEL_MEMORY/(1437934:1437999): Solicitud de creacion de proceso: PID = 1, path = PLANI_PRE_1.prc
+[INFO] 03:18:45:466 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 1
+[INFO] 03:18:45:466 KERNEL_MEMORY/(1437934:1437999): ## PID: 1 - Proceso Creado
+[INFO] 03:18:45:466 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 1
+[INFO] 03:18:45:467 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 0
+[INFO] 03:18:45:967 KERNEL_MEMORY/(1437934:1438249): ## PID: 0 - Obtener instrucción: 1 - Instrucción: INIT_PROC PLANI_PRE_1.prc 3
+[INFO] 03:18:45:968 KERNEL_MEMORY/(1437934:1437999): Solicitud de creacion de proceso: PID = 2, path = PLANI_PRE_1.prc
+[INFO] 03:18:45:968 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 2
+[INFO] 03:18:45:968 KERNEL_MEMORY/(1437934:1437999): ## PID: 2 - Proceso Creado
+[INFO] 03:18:45:968 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 2
+[INFO] 03:18:45:968 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 0
+[INFO] 03:18:46:469 KERNEL_MEMORY/(1437934:1438249): ## PID: 0 - Obtener instrucción: 2 - Instrucción: INIT_PROC PLANI_PRE_2.prc 2
+[INFO] 03:18:46:469 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 3
+[INFO] 03:18:46:469 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 3
+[INFO] 03:18:46:470 KERNEL_MEMORY/(1437934:1437999): Solicitud de creacion de proceso: PID = 3, path = PLANI_PRE_2.prc
+[INFO] 03:18:46:470 KERNEL_MEMORY/(1437934:1437999): ## PID: 3 - Proceso Creado
+[INFO] 03:18:46:470 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 0
+[INFO] 03:18:46:971 KERNEL_MEMORY/(1437934:1438249): ## PID: 0 - Obtener instrucción: 3 - Instrucción: INIT_PROC PLANI_PRE_2.prc 2
+[INFO] 03:18:46:972 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 4
+[INFO] 03:18:46:972 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 4
+[INFO] 03:18:46:972 KERNEL_MEMORY/(1437934:1437999): Solicitud de creacion de proceso: PID = 4, path = PLANI_PRE_2.prc
+[INFO] 03:18:46:972 KERNEL_MEMORY/(1437934:1437999): ## PID: 4 - Proceso Creado
+[INFO] 03:18:46:973 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 0
+[INFO] 03:18:47:473 KERNEL_MEMORY/(1437934:1438249): ## PID: 0 - Obtener instrucción: 4 - Instrucción: INIT_PROC PLANI_PRE_3.prc 1
+[INFO] 03:18:47:474 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 5
+[INFO] 03:18:47:474 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 0 - PC: 5
+[INFO] 03:18:47:476 KERNEL_MEMORY/(1437934:1437999): Solicitud de creacion de proceso: PID = 5, path = PLANI_PRE_3.prc
+[INFO] 03:18:47:476 KERNEL_MEMORY/(1437934:1437999): ## PID: 5 - Proceso Creado
+[INFO] 03:18:47:476 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 0
+[INFO] 03:18:47:977 KERNEL_MEMORY/(1437934:1438249): ## PID: 0 - Obtener instrucción: 5 - Instrucción: EXIT
+[INFO] 03:18:47:978 KERNEL_MEMORY/(1437934:1437999): PID: 0 - Proceso finalizado
+[INFO] 03:18:47:978 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 1
+[INFO] 03:18:48:483 KERNEL_MEMORY/(1437934:1438249): ## PID: 1 - Obtener instrucción: 0 - Instrucción: SET AX 1
+[INFO] 03:18:48:990 KERNEL_MEMORY/(1437934:1438249): ## PID: 1 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:18:49:504 KERNEL_MEMORY/(1437934:1438249): ## PID: 1 - Obtener instrucción: 2 - Instrucción: SLEEP 20000
+[INFO] 03:18:49:506 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 1 - PC: 3
+[INFO] 03:18:49:506 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 1 - PC: 3
+[INFO] 03:18:49:507 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 2
+[INFO] 03:18:50:007 KERNEL_MEMORY/(1437934:1438249): ## PID: 2 - Obtener instrucción: 0 - Instrucción: SET AX 1
+[INFO] 03:18:50:509 KERNEL_MEMORY/(1437934:1438249): ## PID: 2 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:18:51:010 KERNEL_MEMORY/(1437934:1438249): ## PID: 2 - Obtener instrucción: 2 - Instrucción: SLEEP 20000
+[INFO] 03:18:51:011 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 2 - PC: 3
+[INFO] 03:18:51:011 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 2 - PC: 3
+[INFO] 03:18:51:012 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 3
+[INFO] 03:18:51:513 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 0 - Instrucción: SET AX 50
+[INFO] 03:18:52:013 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:18:52:514 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:18:53:015 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:18:53:532 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:18:54:033 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:18:54:535 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:18:55:037 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:18:55:538 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:18:56:038 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:18:56:540 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:18:57:041 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:18:57:542 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:18:58:044 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:18:58:545 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:18:59:046 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:18:59:511 KERNEL_MEMORY/(1437934:1437999): PID: 1 - Proceso Suspendido
+[INFO] 03:18:59:546 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:00:047 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:00:548 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:01:049 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:01:050 KERNEL_MEMORY/(1437934:1437999): PID: 2 - Proceso Suspendido
+[INFO] 03:19:01:550 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:02:051 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:02:555 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:03:056 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:03:557 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:04:058 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:04:558 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:05:060 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:05:560 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:06:061 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:06:563 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:07:066 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:07:566 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:08:068 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:08:568 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:09:069 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:09:511 KERNEL_MEMORY/(1437934:1437999): PID: 1 - Proceso Des-suspendido
+[INFO] 03:19:09:570 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:10:071 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:10:572 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:11:073 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:11:574 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:12:076 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:12:577 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:13:077 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:13:579 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:14:080 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:14:581 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:15:082 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:15:584 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:16:085 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:16:592 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:17:094 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:17:595 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:18:095 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:18:596 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:19:111 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:19:624 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:20:126 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:20:627 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:21:128 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:21:629 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:22:131 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:22:633 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:23:142 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:23:642 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:24:145 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:24:646 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:25:151 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:25:652 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:26:153 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:26:654 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:27:155 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:27:656 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:28:156 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:28:664 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:29:166 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:29:518 KERNEL_MEMORY/(1437934:1437999): PID: 2 - Proceso Des-suspendido
+[INFO] 03:19:29:669 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:30:170 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:30:671 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:31:172 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:31:673 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:32:175 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:32:676 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:33:177 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:33:679 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:34:180 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:34:681 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:35:182 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:35:683 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:36:184 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:36:685 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:37:186 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:37:687 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:38:187 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:38:688 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:39:189 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:39:690 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:40:191 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:40:693 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:41:194 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:41:695 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:42:197 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:42:698 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:43:210 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:43:711 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:44:212 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:44:714 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:45:216 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:45:717 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:46:218 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:46:721 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:47:222 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:47:722 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:48:223 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:48:724 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:49:225 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:49:726 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:50:226 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:50:728 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:51:228 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:51:729 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:52:230 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:52:731 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:53:233 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:53:735 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:54:236 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:54:736 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:55:238 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:55:738 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:56:240 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:56:742 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:57:243 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:57:746 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:58:247 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:19:58:747 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:19:59:248 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:19:59:750 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:00:252 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:00:753 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:01:254 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:01:754 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:02:255 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:02:756 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:03:257 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:03:758 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:04:258 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:04:759 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:05:260 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:05:761 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:06:262 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:06:763 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:07:264 KERNEL_MEMORY/(1437934:1438249): ## PID: 3 - Obtener instrucción: 4 - Instrucción: EXIT
+[INFO] 03:20:07:265 KERNEL_MEMORY/(1437934:1437999): PID: 3 - Proceso finalizado
+[INFO] 03:20:07:267 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 4
+[INFO] 03:20:07:767 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 0 - Instrucción: SET AX 50
+[INFO] 03:20:08:268 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:08:769 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:09:270 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:09:771 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:10:272 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:10:773 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:11:274 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:11:775 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:12:276 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:12:777 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:13:277 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:13:778 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:14:279 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:14:781 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:15:282 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:15:783 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:16:284 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:16:785 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:17:286 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:17:788 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:18:289 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:18:790 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:19:291 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:19:791 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:20:293 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:20:794 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:21:295 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:21:796 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:22:297 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:22:798 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:23:299 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:23:799 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:24:301 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:24:802 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:25:303 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:25:804 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:26:306 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:26:807 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:27:310 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:27:810 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:28:311 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:28:812 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:29:314 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:29:815 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:30:317 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:30:818 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:31:319 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:31:821 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:32:323 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:32:824 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:33:324 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:33:825 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:34:327 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:34:828 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:35:330 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:35:832 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:36:334 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:36:834 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:37:335 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:37:837 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:38:339 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:38:840 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:39:342 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:39:871 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:40:372 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:40:874 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:41:374 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:41:876 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:42:378 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:42:879 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:43:380 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:43:881 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:44:383 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:44:884 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:45:393 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:45:894 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:46:395 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:46:896 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:47:398 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:47:898 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:48:404 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:48:905 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:49:407 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:49:908 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:50:409 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:50:911 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:51:414 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:51:915 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:52:416 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:52:916 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:53:419 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:53:920 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:54:421 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:54:922 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:55:424 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:55:925 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:56:426 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:56:927 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:57:428 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:57:929 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:58:430 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:20:58:931 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:20:59:433 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:20:59:935 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:00:436 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:00:937 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:01:439 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:01:940 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:02:443 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:02:945 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:03:446 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:03:948 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:04:450 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:04:951 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:05:452 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:05:954 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:06:455 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:06:956 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:07:457 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:07:958 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:08:459 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:08:960 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:09:461 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:09:962 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:10:463 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:10:963 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:11:464 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:11:965 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:12:466 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:12:967 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:13:468 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:13:969 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:14:471 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:14:972 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:15:475 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:15:976 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:16:477 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:16:978 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:17:480 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:17:982 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:18:483 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:18:986 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:19:486 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:19:987 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:20:505 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:21:007 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:21:508 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:22:009 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 1 - Instrucción: SET BX 1
+[INFO] 03:21:22:511 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 2 - Instrucción: SUB AX BX
+[INFO] 03:21:23:013 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 3 - Instrucción: JNZ AX 1
+[INFO] 03:21:23:514 KERNEL_MEMORY/(1437934:1438249): ## PID: 4 - Obtener instrucción: 4 - Instrucción: EXIT
+[INFO] 03:21:23:515 KERNEL_MEMORY/(1437934:1437999): PID: 4 - Proceso finalizado
+[INFO] 03:21:23:516 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 5
+[INFO] 03:21:24:016 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 0 - Instrucción: SET AX 1
+[INFO] 03:21:24:518 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 1 - Instrucción: SET BX 2
+[INFO] 03:21:25:019 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 2 - Instrucción: SET CX 3
+[INFO] 03:21:25:520 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 3 - Instrucción: SET DX 4
+[INFO] 03:21:26:021 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 4 - Instrucción: SET EAX 1001
+[INFO] 03:21:26:523 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 5 - Instrucción: SET EBX 1001
+[INFO] 03:21:27:024 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 6 - Instrucción: SET ECX 1001
+[INFO] 03:21:27:525 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 7 - Instrucción: SET EDX 1001
+[INFO] 03:21:28:026 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 8 - Instrucción: SET SI 0
+[INFO] 03:21:28:527 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 9 - Instrucción: SET DI 0
+[INFO] 03:21:29:027 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 10 - Instrucción: SLEEP 100
+[INFO] 03:21:29:029 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 5 - PC: 11
+[INFO] 03:21:29:029 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 5 - PC: 11
+[INFO] 03:21:29:029 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 1
+[INFO] 03:21:29:530 KERNEL_MEMORY/(1437934:1438249): ## PID: 1 - Obtener instrucción: 3 - Instrucción: SET AX 1
+[INFO] 03:21:30:031 KERNEL_MEMORY/(1437934:1438249): ## PID: 1 - Obtener instrucción: 4 - Instrucción: SET BX 1
+[INFO] 03:21:30:532 KERNEL_MEMORY/(1437934:1438249): ## PID: 1 - Obtener instrucción: 5 - Instrucción: SLEEP 20000
+[INFO] 03:21:30:533 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 1 - PC: 6
+[INFO] 03:21:30:533 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 1 - PC: 6
+[INFO] 03:21:30:533 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 2
+[INFO] 03:21:31:076 KERNEL_MEMORY/(1437934:1438249): ## PID: 2 - Obtener instrucción: 3 - Instrucción: SET AX 1
+[INFO] 03:21:31:578 KERNEL_MEMORY/(1437934:1438249): ## PID: 2 - Obtener instrucción: 4 - Instrucción: SET BX 1
+[INFO] 03:21:32:079 KERNEL_MEMORY/(1437934:1438249): ## PID: 2 - Obtener instrucción: 5 - Instrucción: SLEEP 20000
+[INFO] 03:21:32:080 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 2 - PC: 6
+[INFO] 03:21:32:080 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 2 - PC: 6
+[INFO] 03:21:32:080 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 5
+[INFO] 03:21:32:625 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 11 - Instrucción: SET AX 1
+[INFO] 03:21:33:126 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 12 - Instrucción: SET BX 2
+[INFO] 03:21:33:628 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 13 - Instrucción: SET CX 3
+[INFO] 03:21:34:129 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 14 - Instrucción: SET DX 4
+[INFO] 03:21:34:630 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 15 - Instrucción: SET EAX 1001
+[INFO] 03:21:35:130 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 16 - Instrucción: SET EBX 1001
+[INFO] 03:21:35:631 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 17 - Instrucción: SET ECX 1001
+[INFO] 03:21:36:132 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 18 - Instrucción: SET EDX 1001
+[INFO] 03:21:36:633 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 19 - Instrucción: SET SI 0
+[INFO] 03:21:37:135 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 20 - Instrucción: SET DI 0
+[INFO] 03:21:37:642 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 21 - Instrucción: SLEEP 100
+[INFO] 03:21:37:643 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 5 - PC: 22
+[INFO] 03:21:37:643 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 5 - PC: 22
+[INFO] 03:21:40:544 KERNEL_MEMORY/(1437934:1437999): PID: 1 - Proceso Suspendido
+[INFO] 03:21:42:109 KERNEL_MEMORY/(1437934:1437999): PID: 2 - Proceso Suspendido
+[INFO] 03:21:47:656 KERNEL_MEMORY/(1437934:1437999): PID: 5 - Proceso Suspendido
+[INFO] 03:21:50:535 KERNEL_MEMORY/(1437934:1437999): PID: 1 - Proceso Des-suspendido
+[INFO] 03:21:50:535 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 1
+[INFO] 03:21:51:035 KERNEL_MEMORY/(1437934:1438249): ## PID: 1 - Obtener instrucción: 6 - Instrucción: EXIT
+[INFO] 03:21:51:036 KERNEL_MEMORY/(1437934:1437999): PID: 1 - Proceso finalizado
+[INFO] 03:22:10:536 KERNEL_MEMORY/(1437934:1437999): PID: 2 - Proceso Des-suspendido
+[INFO] 03:22:10:537 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 2
+[INFO] 03:22:10:638 KERNEL_MEMORY/(1437934:1437999): PID: 5 - Proceso Des-suspendido
+[INFO] 03:22:11:038 KERNEL_MEMORY/(1437934:1438249): ## PID: 2 - Obtener instrucción: 6 - Instrucción: EXIT
+[INFO] 03:22:11:039 KERNEL_MEMORY/(1437934:1437999): PID: 2 - Proceso finalizado
+[INFO] 03:22:11:039 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 5
+[INFO] 03:22:11:540 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 22 - Instrucción: SET AX 1
+[INFO] 03:22:12:042 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 23 - Instrucción: SET BX 2
+[INFO] 03:22:12:543 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 24 - Instrucción: SET CX 3
+[INFO] 03:22:13:044 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 25 - Instrucción: SET DX 4
+[INFO] 03:22:13:545 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 26 - Instrucción: SET EAX 1001
+[INFO] 03:22:14:046 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 27 - Instrucción: SET EBX 1001
+[INFO] 03:22:14:554 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 28 - Instrucción: SET ECX 1001
+[INFO] 03:22:15:056 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 29 - Instrucción: SET EDX 1001
+[INFO] 03:22:15:557 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 30 - Instrucción: SET SI 0
+[INFO] 03:22:16:059 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 31 - Instrucción: SET DI 0
+[INFO] 03:22:16:560 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 32 - Instrucción: SLEEP 100
+[INFO] 03:22:16:561 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 5 - PC: 33
+[INFO] 03:22:16:561 KERNEL_MEMORY/(1437934:1438249): Contexto actualizado para PID: 5 - PC: 33
+[INFO] 03:22:16:664 KERNEL_MEMORY/(1437934:1438249): Contexto enviado a CPU - PID: 5
+[INFO] 03:22:17:164 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 33 - Instrucción: SET AX 1
+[INFO] 03:22:17:665 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 34 - Instrucción: SET BX 2
+[INFO] 03:22:18:166 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 35 - Instrucción: SET CX 3
+[INFO] 03:22:18:673 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 36 - Instrucción: SET DX 4
+[INFO] 03:22:19:174 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 37 - Instrucción: SET EAX 1001
+[INFO] 03:22:19:676 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 38 - Instrucción: SET EBX 1001
+[INFO] 03:22:20:178 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 39 - Instrucción: SET ECX 1001
+[INFO] 03:22:20:679 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 40 - Instrucción: SET EDX 1001
+[INFO] 03:22:21:179 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 41 - Instrucción: SET SI 0
+[INFO] 03:22:21:681 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 42 - Instrucción: SET DI 0
+[INFO] 03:22:22:182 KERNEL_MEMORY/(1437934:1438249): ## PID: 5 - Obtener instrucción: 43 - Instrucción: EXIT
+[INFO] 03:22:22:183 KERNEL_MEMORY/(1437934:1437999): PID: 5 - Proceso finalizado
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/kernel_scheduler$ ./bin/kernel_scheduler kernel_scheduler.config PLANI_PRE_0.prc
+[INFO] 03:16:09:795 KERNEL_SCHEDULER/(1437998:1437998): Servidor listo para aceptar conexiones
+[INFO] 03:16:09:795 KERNEL_SCHEDULER/(1437998:1437998): ## Conectado a Kernel Memory
+[INFO] 03:16:09:796 KERNEL_SCHEDULER/(1437998:1437998): Handshake exitoso
+[INFO] 03:16:09:796 KERNEL_SCHEDULER/(1437998:1437998): ## (0) Se crea el proceso - Estado: NEW
+[INFO] 03:16:09:796 KERNEL_SCHEDULER/(1437998:1437998): ## (0) Solicitud de creacion enviada a Kernel Memory - Path: PLANI_PRE_0.prc
+[INFO] 03:16:09:796 KERNEL_SCHEDULER/(1437998:1437998): ## (0) Pasa del estado NEW al estado READY
+[INFO] 03:16:09:796 KERNEL_SCHEDULER/(1437998:1438000): Kernel Scheduler conectada con Kernel Memory
+[INFO] 03:18:37:479 KERNEL_SCHEDULER/(1437998:1437998): ## Modulo IO tipo SLEEP conectado
+[INFO] 03:18:37:479 KERNEL_SCHEDULER/(1437998:1438166): Kernel Scheduler conectada con IO tipo SLEEP
+[INFO] 03:18:44:962 KERNEL_SCHEDULER/(1437998:1437998): ## CPU 1 Conectada
+[INFO] 03:18:44:962 KERNEL_SCHEDULER/(1437998:1438001): ## (0) Pasa del estado READY al estado EXECUTE
+[INFO] 03:18:44:963 KERNEL_SCHEDULER/(1437998:1438252): Kernel Scheduler conectada con CPU
+[INFO] 03:18:45:466 KERNEL_SCHEDULER/(1437998:1438252): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 03:18:45:466 KERNEL_SCHEDULER/(1437998:1438252): ## (1) Se crea el proceso - Estado: NEW
+[INFO] 03:18:45:466 KERNEL_SCHEDULER/(1437998:1438252): ## (1) Solicitud de creacion enviada a Kernel Memory - Path: PLANI_PRE_1.prc
+[INFO] 03:18:45:466 KERNEL_SCHEDULER/(1437998:1438252): ## (1) Pasa del estado NEW al estado READY
+[INFO] 03:18:45:968 KERNEL_SCHEDULER/(1437998:1438252): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 03:18:45:968 KERNEL_SCHEDULER/(1437998:1438252): ## (2) Se crea el proceso - Estado: NEW
+[INFO] 03:18:45:968 KERNEL_SCHEDULER/(1437998:1438252): ## (2) Solicitud de creacion enviada a Kernel Memory - Path: PLANI_PRE_1.prc
+[INFO] 03:18:45:968 KERNEL_SCHEDULER/(1437998:1438252): ## (2) Pasa del estado NEW al estado READY
+[INFO] 03:18:46:470 KERNEL_SCHEDULER/(1437998:1438252): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 03:18:46:470 KERNEL_SCHEDULER/(1437998:1438252): ## (3) Se crea el proceso - Estado: NEW
+[INFO] 03:18:46:470 KERNEL_SCHEDULER/(1437998:1438252): ## (3) Solicitud de creacion enviada a Kernel Memory - Path: PLANI_PRE_2.prc
+[INFO] 03:18:46:470 KERNEL_SCHEDULER/(1437998:1438252): ## (3) Pasa del estado NEW al estado READY
+[INFO] 03:18:46:972 KERNEL_SCHEDULER/(1437998:1438252): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 03:18:46:972 KERNEL_SCHEDULER/(1437998:1438252): ## (4) Se crea el proceso - Estado: NEW
+[INFO] 03:18:46:972 KERNEL_SCHEDULER/(1437998:1438252): ## (4) Solicitud de creacion enviada a Kernel Memory - Path: PLANI_PRE_2.prc
+[INFO] 03:18:46:973 KERNEL_SCHEDULER/(1437998:1438252): ## (4) Pasa del estado NEW al estado READY
+[INFO] 03:18:47:476 KERNEL_SCHEDULER/(1437998:1438252): ## (0) - Solicitó syscall: INIT_PROC
+[INFO] 03:18:47:476 KERNEL_SCHEDULER/(1437998:1438252): ## (5) Se crea el proceso - Estado: NEW
+[INFO] 03:18:47:476 KERNEL_SCHEDULER/(1437998:1438252): ## (5) Solicitud de creacion enviada a Kernel Memory - Path: PLANI_PRE_3.prc
+[INFO] 03:18:47:476 KERNEL_SCHEDULER/(1437998:1438252): ## (5) Pasa del estado NEW al estado READY
+[INFO] 03:18:47:978 KERNEL_SCHEDULER/(1437998:1438252): ## (0) - Solicitó syscall: EXIT
+[INFO] 03:18:47:978 KERNEL_SCHEDULER/(1437998:1438252): ## (0) Pasa del estado EXECUTE al estado EXIT
+[INFO] 03:18:47:978 KERNEL_SCHEDULER/(1437998:1438252): ## (0) finalizó su ejecución con motivo de SUCCESS
+[INFO] 03:18:47:978 KERNEL_SCHEDULER/(1437998:1438001): ## (1) Pasa del estado READY al estado EXECUTE
+[INFO] 03:18:47:978 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:18:49:506 KERNEL_SCHEDULER/(1437998:1438252): ## (1) - Solicitó syscall: SLEEP
+[INFO] 03:18:49:506 KERNEL_SCHEDULER/(1437998:1438252): ## (1) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:18:49:506 KERNEL_SCHEDULER/(1437998:1438001): ## (2) Pasa del estado READY al estado EXECUTE
+[INFO] 03:18:51:011 KERNEL_SCHEDULER/(1437998:1438252): ## (2) - Solicitó syscall: SLEEP
+[INFO] 03:18:51:011 KERNEL_SCHEDULER/(1437998:1438252): ## (2) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:18:51:012 KERNEL_SCHEDULER/(1437998:1438001): ## (3) Pasa del estado READY al estado EXECUTE
+[INFO] 03:18:59:511 KERNEL_SCHEDULER/(1437998:1438320): ## (1) Pasa del estado BLOCK al estado SUSP. BLOCK
+[INFO] 03:18:59:511 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:19:01:050 KERNEL_SCHEDULER/(1437998:1438356): ## (2) Pasa del estado BLOCK al estado SUSP. BLOCK
+[INFO] 03:19:01:050 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:19:09:508 KERNEL_SCHEDULER/(1437998:1438166): ## (1) Pasa del estado SUSP. BLOCK al estado SUSP. READY
+[INFO] 03:19:09:508 KERNEL_SCHEDULER/(1437998:1438166): ## (1) finalizó IO y pasa a SUSP. READY
+[INFO] 03:19:09:512 KERNEL_SCHEDULER/(1437998:1438002): ## (1) Pasa del estado SUSP. READY al estado READY
+[INFO] 03:19:29:517 KERNEL_SCHEDULER/(1437998:1438166): ## (2) Pasa del estado SUSP. BLOCK al estado SUSP. READY
+[INFO] 03:19:29:518 KERNEL_SCHEDULER/(1437998:1438166): ## (2) finalizó IO y pasa a SUSP. READY
+[INFO] 03:19:29:518 KERNEL_SCHEDULER/(1437998:1438002): ## (2) Pasa del estado SUSP. READY al estado READY
+[INFO] 03:20:07:265 KERNEL_SCHEDULER/(1437998:1438252): ## (3) - Solicitó syscall: EXIT
+[INFO] 03:20:07:265 KERNEL_SCHEDULER/(1437998:1438252): ## (3) Pasa del estado EXECUTE al estado EXIT
+[INFO] 03:20:07:265 KERNEL_SCHEDULER/(1437998:1438252): ## (3) finalizó su ejecución con motivo de SUCCESS
+[INFO] 03:20:07:266 KERNEL_SCHEDULER/(1437998:1438001): ## (4) Pasa del estado READY al estado EXECUTE
+[INFO] 03:20:07:265 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:21:23:515 KERNEL_SCHEDULER/(1437998:1438252): ## (4) - Solicitó syscall: EXIT
+[INFO] 03:21:23:515 KERNEL_SCHEDULER/(1437998:1438252): ## (4) Pasa del estado EXECUTE al estado EXIT
+[INFO] 03:21:23:515 KERNEL_SCHEDULER/(1437998:1438252): ## (4) finalizó su ejecución con motivo de SUCCESS
+[INFO] 03:21:23:515 KERNEL_SCHEDULER/(1437998:1438001): ## (5) Pasa del estado READY al estado EXECUTE
+[INFO] 03:21:23:515 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:21:29:029 KERNEL_SCHEDULER/(1437998:1438252): ## (5) - Solicitó syscall: SLEEP
+[INFO] 03:21:29:029 KERNEL_SCHEDULER/(1437998:1438252): ## (5) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:21:29:029 KERNEL_SCHEDULER/(1437998:1438001): ## (1) Pasa del estado READY al estado EXECUTE
+[INFO] 03:21:29:130 KERNEL_SCHEDULER/(1437998:1438166): ## (5) Pasa del estado BLOCK al estado READY
+[INFO] 03:21:29:130 KERNEL_SCHEDULER/(1437998:1438166): ## (5) finalizó IO y pasa a READY
+[INFO] 03:21:30:532 KERNEL_SCHEDULER/(1437998:1438252): ## (1) - Solicitó syscall: SLEEP
+[INFO] 03:21:30:532 KERNEL_SCHEDULER/(1437998:1438252): ## (1) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:21:30:533 KERNEL_SCHEDULER/(1437998:1438001): ## (2) Pasa del estado READY al estado EXECUTE
+[INFO] 03:21:32:080 KERNEL_SCHEDULER/(1437998:1438252): ## (2) - Solicitó syscall: SLEEP
+[INFO] 03:21:32:080 KERNEL_SCHEDULER/(1437998:1438252): ## (2) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:21:32:080 KERNEL_SCHEDULER/(1437998:1438001): ## (5) Pasa del estado READY al estado EXECUTE
+[INFO] 03:21:37:643 KERNEL_SCHEDULER/(1437998:1438252): ## (5) - Solicitó syscall: SLEEP
+[INFO] 03:21:37:643 KERNEL_SCHEDULER/(1437998:1438252): ## (5) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:21:40:544 KERNEL_SCHEDULER/(1437998:1439516): ## (1) Pasa del estado BLOCK al estado SUSP. BLOCK
+[INFO] 03:21:40:545 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:21:42:109 KERNEL_SCHEDULER/(1437998:1439543): ## (2) Pasa del estado BLOCK al estado SUSP. BLOCK
+[INFO] 03:21:42:110 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:21:47:656 KERNEL_SCHEDULER/(1437998:1439604): ## (5) Pasa del estado BLOCK al estado SUSP. BLOCK
+[INFO] 03:21:47:656 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:21:50:534 KERNEL_SCHEDULER/(1437998:1438166): ## (1) Pasa del estado SUSP. BLOCK al estado SUSP. READY
+[INFO] 03:21:50:534 KERNEL_SCHEDULER/(1437998:1438166): ## (1) finalizó IO y pasa a SUSP. READY
+[INFO] 03:21:50:535 KERNEL_SCHEDULER/(1437998:1438002): ## (1) Pasa del estado SUSP. READY al estado READY
+[INFO] 03:21:50:535 KERNEL_SCHEDULER/(1437998:1438001): ## (1) Pasa del estado READY al estado EXECUTE
+[INFO] 03:21:51:036 KERNEL_SCHEDULER/(1437998:1438252): ## (1) - Solicitó syscall: EXIT
+[INFO] 03:21:51:036 KERNEL_SCHEDULER/(1437998:1438252): ## (1) Pasa del estado EXECUTE al estado EXIT
+[INFO] 03:21:51:036 KERNEL_SCHEDULER/(1437998:1438252): ## (1) finalizó su ejecución con motivo de SUCCESS
+[INFO] 03:21:51:036 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:22:10:536 KERNEL_SCHEDULER/(1437998:1438166): ## (2) Pasa del estado SUSP. BLOCK al estado SUSP. READY
+[INFO] 03:22:10:536 KERNEL_SCHEDULER/(1437998:1438166): ## (2) finalizó IO y pasa a SUSP. READY
+[INFO] 03:22:10:537 KERNEL_SCHEDULER/(1437998:1438002): ## (2) Pasa del estado SUSP. READY al estado READY
+[INFO] 03:22:10:537 KERNEL_SCHEDULER/(1437998:1438001): ## (2) Pasa del estado READY al estado EXECUTE
+[INFO] 03:22:10:637 KERNEL_SCHEDULER/(1437998:1438166): ## (5) Pasa del estado SUSP. BLOCK al estado SUSP. READY
+[INFO] 03:22:10:637 KERNEL_SCHEDULER/(1437998:1438166): ## (5) finalizó IO y pasa a SUSP. READY
+[INFO] 03:22:10:638 KERNEL_SCHEDULER/(1437998:1438002): ## (5) Pasa del estado SUSP. READY al estado READY
+[INFO] 03:22:11:038 KERNEL_SCHEDULER/(1437998:1438252): ## (2) - Solicitó syscall: EXIT
+[INFO] 03:22:11:038 KERNEL_SCHEDULER/(1437998:1438252): ## (2) Pasa del estado EXECUTE al estado EXIT
+[INFO] 03:22:11:038 KERNEL_SCHEDULER/(1437998:1438252): ## (2) finalizó su ejecución con motivo de SUCCESS
+[INFO] 03:22:11:039 KERNEL_SCHEDULER/(1437998:1438001): ## (5) Pasa del estado READY al estado EXECUTE
+[INFO] 03:22:11:039 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+[INFO] 03:22:16:562 KERNEL_SCHEDULER/(1437998:1438252): ## (5) - Solicitó syscall: SLEEP
+[INFO] 03:22:16:562 KERNEL_SCHEDULER/(1437998:1438252): ## (5) Pasa del estado EXECUTE al estado BLOCK
+[INFO] 03:22:16:663 KERNEL_SCHEDULER/(1437998:1438166): ## (5) Pasa del estado BLOCK al estado READY
+[INFO] 03:22:16:663 KERNEL_SCHEDULER/(1437998:1438166): ## (5) finalizó IO y pasa a READY
+[INFO] 03:22:16:663 KERNEL_SCHEDULER/(1437998:1438001): ## (5) Pasa del estado READY al estado EXECUTE
+[INFO] 03:22:22:182 KERNEL_SCHEDULER/(1437998:1438252): ## (5) - Solicitó syscall: EXIT
+[INFO] 03:22:22:182 KERNEL_SCHEDULER/(1437998:1438252): ## (5) Pasa del estado EXECUTE al estado EXIT
+[INFO] 03:22:22:183 KERNEL_SCHEDULER/(1437998:1438252): ## (5) finalizó su ejecución con motivo de SUCCESS
+[INFO] 03:22:22:183 KERNEL_SCHEDULER/(1437998:1438000): Kernel Memory notifica mas memoria: 0 bytes
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/swap$ ./bin/swap swap.config
+[INFO] 03:16:37:029 SWAP/(1438081:1438081): Creando conexion con Kernel Memory
+
+[INFO] 03:16:37:030 SWAP/(1438081:1438081): ## Conectado a Kernel Memory
+[INFO] 03:16:37:030 SWAP/(1438081:1438081): Handshake exitoso
+[INFO] 03:16:37:031 SWAP/(1438081:1438083): SWAP conectado con Kernel Memory
+
+utnso@utnso:~/tp-2026-1c-BreakPoint/io$ ./bin/io io.config SLEEP
+[INFO] 03:18:37:479 IO/(1438165:1438165): Creando conexion con Kernel Scheduler
+
+[INFO] 03:18:37:479 IO/(1438165:1438165): ## Conectado a Kernel Scheduler
+[INFO] 03:18:37:479 IO/(1438165:1438165): Handshake exitoso
+[INFO] 03:18:37:480 IO/(1438165:1438167): IO de tipo SLEEP lista para atender peticiones
+[INFO] 03:18:49:506 IO/(1438165:1438167): ## PID: 1 - Inicio de IO
+[INFO] 03:18:49:507 IO/(1438165:1438167): ## PID: 1 - Haciendo sleep por 20000 milisegundos
+[INFO] 03:19:09:508 IO/(1438165:1438167): ## PID: 1 - Fin de IO
+[INFO] 03:19:09:512 IO/(1438165:1438167): ## PID: 2 - Inicio de IO
+[INFO] 03:19:09:512 IO/(1438165:1438167): ## PID: 2 - Haciendo sleep por 20000 milisegundos
+[INFO] 03:19:29:517 IO/(1438165:1438167): ## PID: 2 - Fin de IO
+[INFO] 03:21:29:029 IO/(1438165:1438167): ## PID: 5 - Inicio de IO
+[INFO] 03:21:29:029 IO/(1438165:1438167): ## PID: 5 - Haciendo sleep por 100 milisegundos
+[INFO] 03:21:29:130 IO/(1438165:1438167): ## PID: 5 - Fin de IO
+[INFO] 03:21:30:533 IO/(1438165:1438167): ## PID: 1 - Inicio de IO
+[INFO] 03:21:30:533 IO/(1438165:1438167): ## PID: 1 - Haciendo sleep por 20000 milisegundos
+[INFO] 03:21:50:534 IO/(1438165:1438167): ## PID: 1 - Fin de IO
+[INFO] 03:21:50:535 IO/(1438165:1438167): ## PID: 2 - Inicio de IO
+[INFO] 03:21:50:536 IO/(1438165:1438167): ## PID: 2 - Haciendo sleep por 20000 milisegundos
+[INFO] 03:22:10:536 IO/(1438165:1438167): ## PID: 2 - Fin de IO
+[INFO] 03:22:10:536 IO/(1438165:1438167): ## PID: 5 - Inicio de IO
+[INFO] 03:22:10:536 IO/(1438165:1438167): ## PID: 5 - Haciendo sleep por 100 milisegundos
+[INFO] 03:22:10:637 IO/(1438165:1438167): ## PID: 5 - Fin de IO
+[INFO] 03:22:16:563 IO/(1438165:1438167): ## PID: 5 - Inicio de IO
+[INFO] 03:22:16:563 IO/(1438165:1438167): ## PID: 5 - Haciendo sleep por 100 milisegundos
+[INFO] 03:22:16:663 IO/(1438165:1438167): ## PID: 5 - Fin de IO
+
 
