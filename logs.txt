@@ -1,1 +1,2 @@
 
+valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=valgrind_km.txt ./bin/kernel_memory kernel_memory.config
